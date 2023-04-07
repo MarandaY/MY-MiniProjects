@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.maincontainer {
+    margin: 50px 120px;
+    background-color: rgb(255, 238, 205);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    color: royalblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+    color: rgb(63, 150, 255);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.emoji {
+    font-size: 10rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.starter, .starter2 {
+    display: none;
+}
+
+.full, .full2 {
+    display: none;
+}
+
+.active, .active2 {
+    display: block;
+    color: coral;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info div {
+    text-align: center;
+    background: rgb(255, 142, 213);
+    color: white;
+    padding: 2.5rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.7rem;
+    text-shadow: 
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000,
+   -1px -1px 0 #000;
+
+}
+
+#circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 100px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: lightskyblue;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+#circle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 100px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: lightskyblue;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+.hover {
+    transform: scale(1.5);
+}
